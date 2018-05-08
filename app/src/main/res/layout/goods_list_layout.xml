@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            android:text="商品列表"
+            android:textSize="25sp" />
+
+        <ImageView
+            android:id="@+id/goodslist_change"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="right"
+            android:src="@drawable/grid_icon" />
+    </FrameLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.75dp"
+        android:background="#999999" />
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <bawei.com.zdw_login_register_moni2_demo.view.custumview.MySearchView
+            android:layout_width="match_parent"
+            android:id="@+id/mysearch"
+            android:layout_height="40dp"
+            android:layout_weight="1">
+
+        </bawei.com.zdw_login_register_moni2_demo.view.custumview.MySearchView>
+        <TextView
+            android:gravity="right"
+            android:id="@+id/sousuo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="搜索"/>
+    </LinearLayout>
+
+
+    <bawei.com.zdw_login_register_moni2_demo.view.custumview.XListView
+        android:visibility="visible"
+        android:id="@+id/goodslist_listview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </bawei.com.zdw_login_register_moni2_demo.view.custumview.XListView>
+
+    <GridView
+        android:id="@+id/goodslist_gridview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:numColumns="2"
+        android:visibility="gone"></GridView>
+</LinearLayout>
